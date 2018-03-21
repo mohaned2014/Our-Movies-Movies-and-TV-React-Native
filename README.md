@@ -59,6 +59,9 @@ button and select the simulator into which you want to open your app.
 When you have the app open in your phone or simulator, try opening [`App.js`](/App.js)
 and changing a line. You should see it update on your phone!
 
+If you want to get started before we talk about data fetching in the next lecture,
+you can use the mock data defined in [`mockData.js`](./mockData.js).
+
 Good luck!
 
 ## Staff Solution
