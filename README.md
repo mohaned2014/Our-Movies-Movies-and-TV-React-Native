@@ -65,7 +65,5 @@ you can use the mock data defined in [`mockData.js`](./mockData.js).
 Good luck!
 
 ## Staff Solution
-If you want to play with the staff implementation, you can view it using the
-Expo app by following [this url](https://exp.host/@jhhayashi/movie-browser) or
-by entering `@jhhayashi/movie-browser` as the project URL after pressing the
-`+` button in the Expo app.
+If you want to play with the staff implementation, you can view it using
+Snack at [@jhhayashi/project2-solution](https://snack.expo.io/@jhhayashi/project2-solution).
