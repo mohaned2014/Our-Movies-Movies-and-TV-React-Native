@@ -10,10 +10,18 @@ import HomeScreen from "./src/screens/HomeScreen";
 import SettingScreen from "./src/screens/SettingScreen";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Octicons from "react-native-vector-icons/Octicons";
+import MovieScreen from "./src/screens/MovieScreen";
+import SearchScreen from "./src/screens/SearchScreen";
 const HomeStack = createStackNavigator(
   {
     Home: {
       screen: HomeScreen
+    },
+    Movie: {
+      screen: MovieScreen
+    },
+    Search: {
+      screen: SearchScreen
     }
   },
   {

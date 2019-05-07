@@ -5,7 +5,9 @@ import { Card, CardItem, Left, Body } from "native-base";
 export default class MovieCard extends Component {
   render() {
     return (
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => this.props.navigation.push("Movie", this.props.data)}
+      >
         <Card style={styles.container}>
           <CardItem cardBody>
             <Image
@@ -38,7 +40,8 @@ const styles = StyleSheet.create({
     height: 225,
     width: 150,
     padding: 5,
-    margin: 5
+    margin: 5,
+    borderRadius: 5
   },
   imageStyle: {
     height: 150,
