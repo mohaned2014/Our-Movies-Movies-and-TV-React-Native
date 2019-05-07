@@ -14,7 +14,7 @@ export default class MovieCard extends Component {
               resizeMode={"stretch"}
               source={{
                 uri:
-                  "https://image.tmdb.org/t/p/w154/" +
+                  "https://image.tmdb.org/t/p/w92/" +
                   this.props.data.poster_path
               }}
               style={styles.imageStyle}
@@ -39,9 +39,10 @@ const styles = StyleSheet.create({
   container: {
     height: 225,
     width: 150,
-    padding: 5,
-    margin: 5,
-    borderRadius: 5
+    padding: 3,
+    margin: 7,
+    borderRadius: 5,
+    backgroundColor: "#eec643"
   },
   imageStyle: {
     height: 150,
@@ -49,12 +50,17 @@ const styles = StyleSheet.create({
     flex: 1
   },
   titleStyle: {
-    fontSize: 15,
-    fontWeight: "400"
+    fontSize: 16,
+    fontWeight: "400",
+    textAlign: "center",
+    color: "#ffffff"
+    // alignSelf: "center"
   },
   textContainer: {
     flex: 1,
     alignContent: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    textAlign: "center",
+    backgroundColor: "#141414"
   }
 });

@@ -14,8 +14,8 @@ const styles = {
   buttonStyle: {
     flexDirection: "column",
     width: "80%",
-    backgroundColor: "#02c39a",
-    borderColor: "#02c39a",
+    backgroundColor: "#eec643",
+    borderColor: "#eef0f2",
     borderRadius: 5,
     borderWidth: 1,
     alignSelf: "center",

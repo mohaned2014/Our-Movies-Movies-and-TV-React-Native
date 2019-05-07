@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import {
+  View,
+  RefreshControl,
+  Text,
+  StyleSheet,
+  TouchableOpacity
+} from "react-native";
 import MovieCard from "../components/MovieCard";
 
 import Ionicons from "react-native-vector-icons/Ionicons";
@@ -31,13 +37,17 @@ const data = [
   }
 ];
 export default class HomeScreen extends Component {
+  state = {
+    refreshing: false
+  };
   static navigationOptions = ({ navigation }) => {
     return {
       title: "Our Movies",
-      headerTintColor: "#02c39a",
+      headerTintColor: "#fff",
       headerTitleStyle: {
         flex: 1,
-        textAlign: "center"
+        textAlign: "center",
+        letterSpacing: 1.2
       },
       headerLeft: <View />,
       headerRightContainerStyle: {
@@ -48,22 +58,35 @@ export default class HomeScreen extends Component {
       },
       headerRight: (
         <TouchableOpacity onPress={() => navigation.push("Search")}>
-          <Ionicons name={"ios-search"} size={30} color={"#02c39a"} />
+          <Ionicons name={"ios-search"} size={30} color={"#eec643"} />
         </TouchableOpacity>
       ),
       headerStyle: {
         shadowColor: "transparent", //ios
         elevation: 0, //android
-        borderColor: "#02c39a",
-        borderRadius: 5,
-        borderBottomWidth: 1
+        borderColor: "#eec643",
+        borderBottomWidth: 1,
+        backgroundColor: "#141414"
       }
     };
   };
 
+  _onRefresh = () => {
+    this.setState({ refreshing: false });
+  };
+
   render() {
     return (
-      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        style={styles.container}
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={this.state.refreshing}
+            onRefresh={this._onRefresh}
+          />
+        }
+      >
         {data.map((section, index) => (
           <Section
             title={section.title}
@@ -79,6 +102,6 @@ export default class HomeScreen extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#fff"
+    backgroundColor: "#141414"
   }
 });

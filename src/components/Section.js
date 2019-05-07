@@ -54,16 +54,19 @@ const styles = StyleSheet.create({
     height: 285,
     padding: 5,
     margin: 10,
+    marginLeft: 0,
+    paddingLeft: 15,
     marginBottom: 5,
-    backgroundColor: "#FFFFFF",
-    borderColor: "#02c39a",
-    borderBottomWidth: 1.5,
-    borderRadius: 10
+    backgroundColor: "#141414",
+    borderColor: "#eec643",
+    borderBottomWidth: 1,
+    borderRadius: 5
   },
   TitleStyle: {
     fontSize: 20,
     fontWeight: "400",
     padding: 5,
-    marginLeft: 5
+    color: "#ffffff",
+    letterSpacing: 1.2
   }
 });

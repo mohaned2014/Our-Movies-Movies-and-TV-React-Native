@@ -5,9 +5,9 @@ export default class TextLogo extends Component {
     return (
       <View style={styles.container}>
         <Text style={[styles.headerStyle]}>OU</Text>
-        <Text style={[styles.headerStyle, { color: "#02c39a" }]}>R </Text>
+        <Text style={[styles.headerStyle, { color: "#eec643" }]}>R </Text>
         <Text style={[styles.headerStyle]}>MOVIE</Text>
-        <Text style={[styles.headerStyle, { color: "#02c39a" }]}>S</Text>
+        <Text style={[styles.headerStyle, { color: "#eec643" }]}>S</Text>
       </View>
     );
   }
@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
   },
 
   headerStyle: {
+    color: "#ffffff",
     fontWeight: "600",
     fontSize: 40,
     letterSpacing: 1.5,

@@ -8,7 +8,7 @@ export default class MovieScreen extends Component {
   static navigationOptions = ({ navigation }) => {
     return {
       title: navigation.getParam("title"),
-      headerTintColor: "#02c39a",
+      headerTintColor: "#ffffff",
       headerTitleStyle: {
         flex: 1,
         textAlign: "center"
@@ -21,15 +21,15 @@ export default class MovieScreen extends Component {
       },
       headerRight: (
         <TouchableOpacity onPress={() => navigation.push("Search")}>
-          <Ionicons name={"ios-search"} size={30} color={"#02c39a"} />
+          <Ionicons name={"ios-search"} size={30} color={"#eec643"} />
         </TouchableOpacity>
       ),
       headerStyle: {
         shadowColor: "transparent", //ios
         elevation: 0, //android
-        borderColor: "#02c39a",
-        borderRadius: 5,
-        borderBottomWidth: 1
+        borderColor: "#eec643",
+        borderBottomWidth: 1,
+        backgroundColor: "#141414"
       }
     };
   };

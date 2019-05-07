@@ -55,7 +55,7 @@ export default class LoginScreen extends Component {
           <View style={styles.rowInputContainer}>
             <Text style={[styles.rowInput]}>Don't have an account? </Text>
             <TouchableOpacity>
-              <Text style={[styles.rowInput, { color: "#02c39a" }]}>
+              <Text style={[styles.rowInput, { color: "#eec643" }]}>
                 Signup here
               </Text>
             </TouchableOpacity>
@@ -73,13 +73,13 @@ export default class LoginScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#141414",
     paddingTop: Constants.statusBarHeight,
     width: Dimensions.get("window").width
   },
   textStyle: {
     padding: 15,
-    color: "#02c39a",
+    color: "#eec643",
     fontSize: 16
   },
   logoContainer: {
@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
     flexDirection: "row"
   },
   rowInput: {
-    fontSize: 16
+    fontSize: 16,
+    color: "#eef0f2"
   }
 });

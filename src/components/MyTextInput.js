@@ -4,14 +4,14 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 
 export default class MyTextInput extends Component {
   state = {
-    color: "#BFC0C0"
+    color: "#141414"
   };
   onFocus = () => {
-    this.setState({ color: "#02c39a" });
+    this.setState({ color: "#eec643" });
   };
   onBlur = () => {
     this.setState({
-      color: "#BFC0C0"
+      color: "#ffffff"
     });
   };
   render() {
@@ -25,9 +25,10 @@ export default class MyTextInput extends Component {
           value={this.props.value}
           onFocus={this.onFocus}
           onBlur={this.onBlur}
-          placeholder={this.props.placeholder}
-          style={styles.inputStyle}
           secureTextEntry={this.props.secureTextEntry || false}
+          placeholder={this.props.placeholder}
+          placeholderTextColor={"#141414"}
+          style={styles.inputStyle}
           onChangeText={this.props.onChangeText}
         />
       </View>
@@ -44,17 +45,20 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderColor: "#BFC0C0",
-    borderBottomWidth: 2
+    borderBottomWidth: 1,
+    backgroundColor: "#ffffff"
   },
   icon: {
-    fontSize: 30,
-    fontWeight: "400",
+    fontSize: 25,
+    fontWeight: "200",
     flex: 1,
-    color: "#BFC0C0"
+    paddingLeft: 5,
+    color: "#141414"
   },
   inputStyle: {
     height: 50,
-    backgroundColor: "rgba(255,255,255,0.8)",
+    color: "#141414",
+    backgroundColor: "#ffffff",
     paddingLeft: 10,
     marginBottom: 5,
     flex: 6,
