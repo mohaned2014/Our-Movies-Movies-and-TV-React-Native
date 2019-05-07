@@ -13,7 +13,6 @@ import TextLogo from "../components/TextLogo";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import MyTextInput from "../components/MyTextInput";
 import MyButton from "../components/MyButton";
-
 export default class LoginScreen extends Component {
   state = { email: "", password: "" };
   handleEmailChange = email => {
@@ -21,6 +20,9 @@ export default class LoginScreen extends Component {
   };
   handlePasswordChange = password => {
     this.setState({ password });
+  };
+  handleSkip = () => {
+    this.props.navigation.navigate("Main");
   };
 
   render() {
@@ -59,7 +61,7 @@ export default class LoginScreen extends Component {
             </TouchableOpacity>
           </View>
 
-          <TouchableOpacity>
+          <TouchableOpacity onPress={this.handleSkip}>
             <Text style={styles.textStyle}>Skip for now</Text>
           </TouchableOpacity>
         </View>
