@@ -38,7 +38,8 @@ const data = [
 ];
 export default class HomeScreen extends Component {
   state = {
-    refreshing: false
+    refreshing: false,
+    count: 1
   };
   static navigationOptions = ({ navigation }) => {
     return {
@@ -72,7 +73,7 @@ export default class HomeScreen extends Component {
   };
 
   _onRefresh = () => {
-    this.setState({ refreshing: false });
+    this.setState({ count: this.state.count + 1 });
   };
 
   render() {

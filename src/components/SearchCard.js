@@ -32,7 +32,7 @@ export default class SearchCard extends Component {
           </Text>
           <Text
             ellipsizeMode={"tail"}
-            numberOfLines={2}
+            numberOfLines={1}
             style={styles.subTitleStyle}
           >
             {element.media_type !== "person" && element.overview}
