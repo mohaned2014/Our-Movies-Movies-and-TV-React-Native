@@ -6,11 +6,13 @@ and view additional information about any movies they select. Check out the
 [staff solution](#staff-solution) for a working version.
 
 ## Screenshots
+<p align="center">
 
-<img src="https://github.com/mohaned2014/Our-Movies-Movies-and-TV-React-Native/blob/master/Screens/Screenshot_20190508-134522.png" width="300">
-<img src="https://github.com/mohaned2014/Our-Movies-Movies-and-TV-React-Native/blob/master/Screens/Screenshot_20190508-134552.png" width="300">
-<img src="https://github.com/mohaned2014/Our-Movies-Movies-and-TV-React-Native/blob/master/Screens/Screenshot_20190508-134602.png" width="300">
-<img src="https://github.com/mohaned2014/Our-Movies-Movies-and-TV-React-Native/blob/master/Screens/Screenshot_20190508-134717.png" width="300">
+<img src="https://github.com/mohaned2014/Our-Movies-Movies-and-TV-React-Native/blob/master/Screens/Screenshot_20190508-134522.png" width="360">
+<img src="https://github.com/mohaned2014/Our-Movies-Movies-and-TV-React-Native/blob/master/Screens/Screenshot_20190508-134552.png" width="360">
+<img src="https://github.com/mohaned2014/Our-Movies-Movies-and-TV-React-Native/blob/master/Screens/Screenshot_20190508-134602.png" width="360">
+<img src="https://github.com/mohaned2014/Our-Movies-Movies-and-TV-React-Native/blob/master/Screens/Screenshot_20190508-134717.png" width="360">
+</p>
 
 # Requirements
 
